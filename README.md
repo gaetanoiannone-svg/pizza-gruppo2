@@ -1,2 +1,2 @@
-# pizza-gruppo5
-progetto di gruppo A-B-C
+# pizza-gruppo2
+progetto di gruppo A-B-C, Ciao iannone
