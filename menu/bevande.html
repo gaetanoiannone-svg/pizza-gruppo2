@@ -1,24 +1,307 @@
-<h2>Menu Bevande</h2> <p>
-<h3> Non Alcolici</h3> <p>
-<ul>
-  <li>Acqua Naturale-1€</li>
-  <li>Acqua Frizzante-1€</li>
-  <li>Coca Cola-1.50€</li>
-  <li> Coca Cola Zero-1.50€</li>
-  <li> Pepsi-1.30€ </li>
-  <li> Pepsi Zero-1.30€</li>
-  <li> Fanta-1.20€ </li>
-  <li> Redbull-2.00€</li>
-  <li> Monster-2.30€ </li>
-  <li> Caffe-1.10€ </li>
-</ul>
-<p>
-<h3> Alcolici </h3> <p>
-<ul>
-  <li> Vino Rosso-3.50€</li>
-  <li> Vino Bianco-3.50€</li>
-  <li> Vino Rose-3.50€ </li>
-  <li> Birra-1.00€ </li>
-  <li> Limoncello-3.50€ </li>
-  <li> Meloncello-3.50€ </li>
-</ul>
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Bella Pizza - Bevande</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff8ef;
+      color: #30251e;
+    }
+
+    header {
+      background: #a92323;
+      color: white;
+      text-align: center;
+      padding: 35px 15px;
+    }
+
+    header h1 {
+      font-size: 34px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-style: italic;
+      margin-bottom: 0;
+    }
+
+    .intro {
+      background: #f2dfc5;
+      padding: 25px 15px;
+      text-align: center;
+    }
+
+    .intro h2 {
+      color: #a92323;
+      margin: 0 0 8px;
+    }
+
+    main {
+      max-width: 800px;
+      padding: 20px;
+      margin: auto;
+    }
+
+    .categoria {
+      margin: 28px 0;
+    }
+
+    .categoria h2 {
+      color: #a92323;
+      border-bottom: 2px solid #d8a15d;
+      padding-bottom: 10px;
+    }
+
+    .bevanda {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 4px;
+      border-bottom: 1px dashed #d8c6b2;
+    }
+
+    .bevanda h3 {
+      font-size: 16px;
+      margin: 0 0 5px;
+    }
+
+    .bevanda p {
+      font-size: 13px;
+      color: #75685d;
+      margin: 0;
+    }
+
+    .prezzo {
+      color: #a92323;
+      font-size: 17px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .nota {
+      background: #f2dfc5;
+      padding: 18px;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 1.6;
+      margin-top: 30px;
+    }
+
+    footer {
+      background: #30251e;
+      color: white;
+      text-align: center;
+      padding: 22px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 27px;
+      }
+
+      main {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🥤 LA BELLA PIZZA</h1>
+    <p>Il piacere di stare insieme</p>
+  </header>
+
+  <section class="intro">
+    <h2>IL MENU DELLE BEVANDE</h2>
+    <p>Una bevanda fresca per accompagnare la tua pizza!</p>
+  </section>
+
+  <main>
+
+    <section class="categoria">
+      <h2>💧 Acqua</h2>
+
+      <div class="bevanda">
+        <div>
+          <h3>Acqua naturale 50 cl</h3>
+          <p>Bottiglia piccola</p>
+        </div>
+        <span class="prezzo">€ 1,50</span>
+      </div>
+
+      <div class="bevanda">
+        <div>
+          <h3>Acqua frizzante 50 cl</h3>
+          <p>Bottiglia piccola</p>
+        </div>
+        <span class="prezzo">€ 1,50</span>
+      </div>
+
+      <div class="bevanda">
+        <div>
+          <h3>Acqua 1 litro</h3>
+          <p>Naturale o frizzante</p>
+        </div>
+        <span class="prezzo">€ 2,50</span>
+      </div>
+    </section>
+
+    <section class="categoria">
+      <h2>🥤 Bibite</h2>
+
+      <div class="bevanda">
+        <div>
+          <h3>Coca-Cola 33 cl</h3>
+          <p>Lattina fresca</p>
+        </div>
+        <span class="prezzo">€ 2,50</span>
+      </div>
+
+      <div class="bevanda">
+        <div>
+          <h3>Fanta 33 cl</h3>
+          <p>Gusto arancia</p>
+        </div>
+        <span class="prezzo">€ 2,50</span>
+      </div>
+
+      <div class="bevanda">
+        <div>
+          <h3>Sprite 33 cl</h3>
+          <p>Gusto limone</p>
+        </div>
+        <span class="prezzo">€ 2,50</span>
+      </div>
+
+      <div class="bevanda">
+        <div>
+          <h3>Tè freddo 33 cl</h3>
+          <p>Limone o pesca</p>
+        </div>
+        <span class="prezzo">€ 2,50</span>
+      </div>
+
+      <div class="bevanda">
+        <div>
+          <h3>Aranciata 1 litro</h3>
+          <p>Da condividere</p>
+        </div>
+        <span class="prezzo">€ 4,00</span>
+      </div>
+    </section>
+
+    <section class="categoria">
+      <h2>🍺 Birre</h2>
+
+      <div class="bevanda">
+        <div>
+          <h3>Birra chiara 33 cl</h3>
+          <p>Classica</p>
+        </div>
+        <span class="prezzo">€ 3,50</span>
+      </div>
+
+      <div class="bevanda">
+        <div>
+          <h3>Birra chiara 66 cl</h3>
+          <p>Bottiglia grande</p>
+        </div>
+        <span class="prezzo">€ 5,00</span>
+      </div>
+
+      <div class="bevanda">
+        <div>
+          <h3>Birra analcolica 33 cl</h3>
+          <p>Senza alcol</p>
+        </div>
+        <span class="prezzo">€ 3,00</span>
+      </div>
+    </section>
+
+    <section class="categoria">
+      <h2>🍷 Vini</h2>
+
+      <div class="bevanda">
+        <div>
+          <h3>Vino della casa - calice</h3>
+          <p>Bianco o rosso</p>
+        </div>
+        <span class="prezzo">€ 4,00</span>
+      </div>
+
+      <div class="bevanda">
+        <div>
+          <h3>Vino della casa - 1/4 litro</h3>
+          <p>Bianco o rosso</p>
+        </div>
+        <span class="prezzo">€ 4,50</span>
+      </div>
+
+      <div class="bevanda">
+        <div>
+          <h3>Vino della casa - 1/2 litro</h3>
+          <p>Bianco o rosso</p>
+        </div>
+        <span class="prezzo">€ 7,00</span>
+      </div>
+    </section>
+
+    <section class="categoria">
+      <h2>☕ Caffetteria</h2>
+
+      <div class="bevanda">
+        <div>
+          <h3>Caffè espresso</h3>
+          <p>Il classico italiano</p>
+        </div>
+        <span class="prezzo">€ 1,50</span>
+      </div>
+
+      <div class="bevanda">
+        <div>
+          <h3>Cappuccino</h3>
+          <p>Caffè e latte montato</p>
+        </div>
+        <span class="prezzo">€ 2,00</span>
+      </div>
+
+      <div class="bevanda">
+        <div>
+          <h3>Decaffeinato</h3>
+          <p>Caffè senza caffeina</p>
+        </div>
+        <span class="prezzo">€ 1,70</span>
+      </div>
+    </section>
+
+    <div class="nota">
+      <strong>❤️ Grazie per averci scelto!</strong><br>
+      Le bevande sono servite fresche.<br>
+      Chiedi al personale per altri prodotti disponibili.
+    </div>
+
+  </main>
+
+  <footer>
+    <h3>🍕 LA BELLA PIZZA</h3>
+    <p>Buon appetito e buona bevuta!</p>
+    <small>Prezzi di esempio, modificabili secondo il tuo locale.</small>
+  </footer>
+
+</body>
+</html>
