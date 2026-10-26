@@ -1,9 +1,299 @@
-<h2>Menu dolci</h2>
-<ul>
-  <li>Tiramisu-5€</li>
-  <li>Panna Cotta-4€</li>
-  <li>Cheesecake-6€</li>
-  <li>Bigne-6€</li>
-  <li>Caprese-7€</li>
-  <li>Torta e pera-10€</li>
-</ul>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dolci | Pizzeria 'O Carmine</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff8ef;
+      color: #33251e;
+    }
+
+    header {
+      background: #7b2025;
+      color: #fff;
+      text-align: center;
+      padding: 38px 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin: 12px 0 0;
+      color: #f5dfbd;
+      font-style: italic;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 28px 15px;
+      background: #f0ddc3;
+    }
+
+    .hero h2 {
+      margin: 0 0 10px;
+      color: #7b2025;
+      font-size: 27px;
+    }
+
+    .hero p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 850px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .categoria {
+      margin: 30px 0;
+    }
+
+    .categoria h2 {
+      color: #7b2025;
+      border-bottom: 2px solid #c69b58;
+      padding-bottom: 10px;
+      font-size: 23px;
+    }
+
+    .dolce {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 16px 5px;
+      border-bottom: 1px dashed #d7c4ae;
+    }
+
+    .dolce h3 {
+      margin: 0 0 6px;
+      font-size: 17px;
+    }
+
+    .dolce p {
+      margin: 0;
+      color: #79695c;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .prezzo {
+      color: #7b2025;
+      font-weight: bold;
+      font-size: 18px;
+      white-space: nowrap;
+    }
+
+    .nota {
+      margin-top: 35px;
+      padding: 22px;
+      text-align: center;
+      background: #f0ddc3;
+      border-radius: 12px;
+      line-height: 1.7;
+    }
+
+    .nota strong {
+      color: #7b2025;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #33251e;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 35px;
+    }
+
+    footer p {
+      margin: 8px 0;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 27px;
+      }
+
+      .hero h2 {
+        font-size: 23px;
+      }
+
+      main {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🍕 PIZZERIA 'O CARMINE</h1>
+    <p>La tradizione napoletana, con dolcezza</p>
+  </header>
+
+  <section class="hero">
+    <h2>🍰 LA CARTA DEI DOLCI</h2>
+    <p>
+      Per concludere in dolcezza,<br>
+      lasciati tentare dalle nostre specialità!
+    </p>
+  </section>
+
+  <main>
+
+    <section class="categoria">
+      <h2>🍫 Dolci della Tradizione</h2>
+
+      <div class="dolce">
+        <div>
+          <h3>Tiramisù della casa</h3>
+          <p>Crema al mascarpone, savoiardi e caffè</p>
+        </div>
+        <span class="prezzo">€ 5,00</span>
+      </div>
+
+      <div class="dolce">
+        <div>
+          <h3>Pastiera napoletana</h3>
+          <p>Ricotta, grano e profumo di fiori d'arancio</p>
+        </div>
+        <span class="prezzo">€ 5,00</span>
+      </div>
+
+      <div class="dolce">
+        <div>
+          <h3>Babà napoletano</h3>
+          <p>Il classico dolce della tradizione partenopea</p>
+        </div>
+        <span class="prezzo">€ 4,50</span>
+      </div>
+
+      <div class="dolce">
+        <div>
+          <h3>Caprese al cioccolato</h3>
+          <p>Torta al cioccolato e mandorle</p>
+        </div>
+        <span class="prezzo">€ 5,00</span>
+      </div>
+    </section>
+
+    <section class="categoria">
+      <h2>🍮 Dolci al Cucchiaio</h2>
+
+      <div class="dolce">
+        <div>
+          <h3>Panna cotta</h3>
+          <p>Con topping al caramello o cioccolato</p>
+        </div>
+        <span class="prezzo">€ 4,50</span>
+      </div>
+
+      <div class="dolce">
+        <div>
+          <h3>Crema catalana</h3>
+          <p>Crema delicata con crosticina caramellata</p>
+        </div>
+        <span class="prezzo">€ 5,00</span>
+      </div>
+
+      <div class="dolce">
+        <div>
+          <h3>Cheesecake</h3>
+          <p>Con frutti di bosco o cioccolato</p>
+        </div>
+        <span class="prezzo">€ 5,00</span>
+      </div>
+    </section>
+
+    <section class="categoria">
+      <h2>🍫 Golosità</h2>
+
+      <div class="dolce">
+        <div>
+          <h3>Profiteroles</h3>
+          <p>Bignè con crema e copertura al cioccolato</p>
+        </div>
+        <span class="prezzo">€ 5,50</span>
+      </div>
+
+      <div class="dolce">
+        <div>
+          <h3>Soufflé al cioccolato</h3>
+          <p>Cuore caldo e morbido al cioccolato</p>
+        </div>
+        <span class="prezzo">€ 5,50</span>
+      </div>
+
+      <div class="dolce">
+        <div>
+          <h3>Gelato</h3>
+          <p>Due gusti a scelta, secondo disponibilità</p>
+        </div>
+        <span class="prezzo">€ 4,00</span>
+      </div>
+    </section>
+
+    <section class="categoria">
+      <h2>🍩 Specialità Napoletane</h2>
+
+      <div class="dolce">
+        <div>
+          <h3>Graffa</h3>
+          <p>Ciambella fritta morbida con zucchero</p>
+        </div>
+        <span class="prezzo">€ 3,50</span>
+      </div>
+
+      <div class="dolce">
+        <div>
+          <h3>Sfog liatella riccia</h3>
+          <p>Guscio croccante con ripieno tradizionale</p>
+        </div>
+        <span class="prezzo">€ 3,50</span>
+      </div>
+
+      <div class="dolce">
+        <div>
+          <h3>Sfog liatella frolla</h3>
+          <p>Pasta frolla con cuore di ricotta e semolino</p>
+        </div>
+        <span class="prezzo">€ 3,50</span>
+      </div>
+    </section>
+
+    <div class="nota">
+      <strong>❤️ Un finale dolcissimo da 'O Carmine!</strong>
+      <br>
+      Chiedi al personale i dolci disponibili del giorno.
+      <br>
+      Per informazioni su allergeni e ingredienti,
+      rivolgiti al nostro staff.
+    </div>
+
+  </main>
+
+  <footer>
+    <h3>🍕 PIZZERIA 'O CARMINE</h3>
+    <p>La bontà della tradizione napoletana.</p>
+    <p>Grazie per averci scelto! ❤️</p>
+    <small>Prezzi di esempio, da aggiornare in base al tuo menu.</small>
+  </footer>
+
+</body>
+</html>
