@@ -1,14 +1,257 @@
-<h2>Menù Pizze</h2>
-<ul>
-  <li> Margherita - 4,50 €</li>
-  <li> Napoletana - 5 €</li>
-  <li> Carminuccio - 5 €</li>
-  <li> Marinara - 4,50 €</li>
-  <li> 4 Stagioni - 5,50 €</li>
-  <li> Ortolana - 4 €</li>
-  <li> Diavola - 5 €</li>
-  <li> Salsiccia e Provola - 5 €</li>
-  <li> 4 Formaggi - 4,50 €</li>
-  <li> Wrustel e Patatine - 5 €</li>
-  <li> Pomodorini, Rucola e scaglie di parmiggiano - 5 €</li>
-</ul>
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Bella Pizza - Menu</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff8ef;
+      color: #30251e;
+    }
+
+    header {
+      background: #a92323;
+      color: white;
+      text-align: center;
+      padding: 35px 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 38px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-bottom: 0;
+      font-style: italic;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 25px 15px;
+      background: #f2dfc5;
+    }
+
+    .hero h2 {
+      color: #a92323;
+      margin: 0 0 10px;
+    }
+
+    main {
+      max-width: 850px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .categoria {
+      margin: 28px 0;
+    }
+
+    .categoria h2 {
+      color: #a92323;
+      border-bottom: 2px solid #d8a15d;
+      padding-bottom: 10px;
+    }
+
+    .pizza {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 14px 4px;
+      border-bottom: 1px dashed #d8c6b2;
+    }
+
+    .pizza h3 {
+      margin: 0 0 6px;
+      font-size: 17px;
+    }
+
+    .pizza p {
+      margin: 0;
+      color: #75685d;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .prezzo {
+      color: #a92323;
+      font-weight: bold;
+      white-space: nowrap;
+      font-size: 17px;
+    }
+
+    .nota {
+      background: #f2dfc5;
+      padding: 18px;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #30251e;
+      color: white;
+      text-align: center;
+      padding: 22px 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      main {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍕 LA BELLA PIZZA</h1>
+    <p>Tradizione, passione e ingredienti genuini</p>
+  </header>
+
+  <section class="hero">
+    <h2>IL NOSTRO MENU</h2>
+    <p>La vera pizza italiana, fatta con amore ❤️</p>
+  </section>
+
+  <main>
+    <section class="categoria">
+      <h2>🍅 Pizze Classiche</h2>
+
+      <div class="pizza">
+        <div>
+          <h3>Margherita</h3>
+          <p>Pomodoro, mozzarella, basilico</p>
+        </div>
+        <span class="prezzo">€ 6,00</span>
+      </div>
+
+      <div class="pizza">
+        <div>
+          <h3>Marinara</h3>
+          <p>Pomodoro, aglio, origano, olio EVO</p>
+        </div>
+        <span class="prezzo">€ 5,00</span>
+      </div>
+
+      <div class="pizza">
+        <div>
+          <h3>Napoli</h3>
+          <p>Pomodoro, mozzarella, acciughe, origano</p>
+        </div>
+        <span class="prezzo">€ 7,50</span>
+      </div>
+
+      <div class="pizza">
+        <div>
+          <h3>Diavola</h3>
+          <p>Pomodoro, mozzarella, salame piccante</p>
+        </div>
+        <span class="prezzo">€ 8,00</span>
+      </div>
+    </section>
+
+    <section class="categoria">
+      <h2>🧀 Pizze Speciali</h2>
+
+      <div class="pizza">
+        <div>
+          <h3>Quattro Formaggi</h3>
+          <p>Mozzarella, gorgonzola, fontina, parmigiano</p>
+        </div>
+        <span class="prezzo">€ 9,00</span>
+      </div>
+
+      <div class="pizza">
+        <div>
+          <h3>Capricciosa</h3>
+          <p>Pomodoro, mozzarella, prosciutto, funghi, carciofi, olive</p>
+        </div>
+        <span class="prezzo">€ 9,00</span>
+      </div>
+
+      <div class="pizza">
+        <div>
+          <h3>Vegetariana</h3>
+          <p>Pomodoro, mozzarella, verdure di stagione</p>
+        </div>
+        <span class="prezzo">€ 8,50</span>
+      </div>
+
+      <div class="pizza">
+        <div>
+          <h3>Bufalina</h3>
+          <p>Pomodoro, mozzarella di bufala, basilico</p>
+        </div>
+        <span class="prezzo">€ 9,50</span>
+      </div>
+    </section>
+
+    <section class="categoria">
+      <h2>🍟 Fritti</h2>
+
+      <div class="pizza">
+        <div>
+          <h3>Patatine fritte</h3>
+          <p>Porzione classica</p>
+        </div>
+        <span class="prezzo">€ 3,50</span>
+      </div>
+
+      <div class="pizza">
+        <div>
+          <h3>Supplì</h3>
+          <p>Riso, pomodoro e mozzarella</p>
+        </div>
+        <span class="prezzo">€ 2,00</span>
+      </div>
+    </section>
+
+    <section class="categoria">
+      <h2>🥤 Bevande</h2>
+
+      <div class="pizza">
+        <div><h3>Acqua 50 cl</h3></div>
+        <span class="prezzo">€ 1,50</span>
+      </div>
+
+      <div class="pizza">
+        <div><h3>Cola 33 cl</h3></div>
+        <span class="prezzo">€ 2,50</span>
+      </div>
+
+      <div class="pizza">
+        <div><h3>Birra 33 cl</h3></div>
+        <span class="prezzo">€ 3,50</span>
+      </div>
+    </section>
+
+    <div class="nota">
+      <strong>❤️ Grazie per averci scelto!</strong><br>
+      Tutte le pizze sono preparate al momento.<br>
+      Chiedi al personale informazioni sugli allergeni.
+    </div>
+  </main>
+
+  <footer>
+    <p>🍕 LA BELLA PIZZA</p>
+    <p>Buon appetito!</p>
+    <small>Menu dimostrativo: prezzi modificabili.</small>
+  </footer>
+
+</body>
+</html>
