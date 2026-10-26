@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pizzeria 'O Carmine - Bevande</title>
+  <title>Pizzeria O'Carmine - Bevande</title>
 
   <style>
     * {
@@ -65,11 +64,24 @@
 
     .bevanda {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 12px;
+      gap: 15px;
       padding: 13px 4px;
       border-bottom: 1px dashed #d8c6b2;
+    }
+
+    .bevanda img {
+      width: 85px;
+      height: 85px;
+      object-fit: cover;
+      border-radius: 10px;
+      background: #f2dfc5;
+      flex-shrink: 0;
+    }
+
+    .dettagli {
+      flex: 1;
+      min-width: 0;
     }
 
     .bevanda h3 {
@@ -109,11 +121,32 @@
 
     @media (max-width: 480px) {
       header h1 {
-        font-size: 27px;
+        font-size: 25px;
       }
 
       main {
-        padding: 15px;
+        padding: 12px;
+      }
+
+      .bevanda {
+        gap: 10px;
+      }
+
+      .bevanda img {
+        width: 68px;
+        height: 68px;
+      }
+
+      .bevanda h3 {
+        font-size: 14px;
+      }
+
+      .bevanda p {
+        font-size: 12px;
+      }
+
+      .prezzo {
+        font-size: 15px;
       }
     }
   </style>
@@ -121,187 +154,226 @@
 
 <body>
 
-  <header>
-    <h1>🥤 PIZZERIA O'CARMINE</h1>
-    <p>Il piacere di stare insieme</p>
-  </header>
+<header>
+  <h1>🥤 PIZZERIA O'CARMINE</h1>
+  <p>Il piacere di stare insieme</p>
+</header>
 
-  <section class="intro">
-    <h2>IL MENU DELLE BEVANDE</h2>
-    <p>Una bevanda fresca per accompagnare la tua pizza!</p>
-  </section>
+<section class="intro">
+  <h2>IL MENU DELLE BEVANDE</h2>
+  <p>Una bevanda fresca per accompagnare la tua pizza!</p>
+</section>
 
-  <main>
+<main>
 
-    <section class="categoria">
-      <h2>💧 Acqua</h2>
+  <!-- ACQUA -->
+  <section class="categoria">
+    <h2>💧 Acqua</h2>
 
-      <div class="bevanda">
-        <div>
-          <h3>Acqua naturale 50 cl</h3>
-          <p>Bottiglia piccola</p>
-        </div>
-        <span class="prezzo">€ 1,50</span>
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1560023907-5f339617ea30?w=200&h=200&fit=crop"
+           alt="Bottiglia di acqua naturale">
+      <div class="dettagli">
+        <h3>Acqua naturale 50 cl</h3>
+        <p>Bottiglia piccola</p>
       </div>
-
-      <div class="bevanda">
-        <div>
-          <h3>Acqua frizzante 50 cl</h3>
-          <p>Bottiglia piccola</p>
-        </div>
-        <span class="prezzo">€ 1,50</span>
-      </div>
-
-      <div class="bevanda">
-        <div>
-          <h3>Acqua 1 litro</h3>
-          <p>Naturale o frizzante</p>
-        </div>
-        <span class="prezzo">€ 2,50</span>
-      </div>
-    </section>
-
-    <section class="categoria">
-      <h2>🥤 Bibite</h2>
-
-      <div class="bevanda">
-        <div>
-          <h3>Coca-Cola 33 cl</h3>
-          <p>Lattina fresca</p>
-        </div>
-        <span class="prezzo">€ 2,50</span>
-      </div>
-
-      <div class="bevanda">
-        <div>
-          <h3>Fanta 33 cl</h3>
-          <p>Gusto arancia</p>
-        </div>
-        <span class="prezzo">€ 2,50</span>
-      </div>
-
-      <div class="bevanda">
-        <div>
-          <h3>Sprite 33 cl</h3>
-          <p>Gusto limone</p>
-        </div>
-        <span class="prezzo">€ 2,50</span>
-      </div>
-
-      <div class="bevanda">
-        <div>
-          <h3>Tè freddo 33 cl</h3>
-          <p>Limone o pesca</p>
-        </div>
-        <span class="prezzo">€ 2,50</span>
-      </div>
-
-      <div class="bevanda">
-        <div>
-          <h3>Aranciata 1 litro</h3>
-          <p>Da condividere</p>
-        </div>
-        <span class="prezzo">€ 4,00</span>
-      </div>
-    </section>
-
-    <section class="categoria">
-      <h2>🍺 Birre</h2>
-
-      <div class="bevanda">
-        <div>
-          <h3>Birra chiara 33 cl</h3>
-          <p>Classica</p>
-        </div>
-        <span class="prezzo">€ 3,50</span>
-      </div>
-
-      <div class="bevanda">
-        <div>
-          <h3>Birra chiara 66 cl</h3>
-          <p>Bottiglia grande</p>
-        </div>
-        <span class="prezzo">€ 5,00</span>
-      </div>
-
-      <div class="bevanda">
-        <div>
-          <h3>Birra analcolica 33 cl</h3>
-          <p>Senza alcol</p>
-        </div>
-        <span class="prezzo">€ 3,00</span>
-      </div>
-    </section>
-
-    <section class="categoria">
-      <h2>🍷 Vini</h2>
-
-      <div class="bevanda">
-        <div>
-          <h3>Vino della casa - calice</h3>
-          <p>Bianco o rosso</p>
-        </div>
-        <span class="prezzo">€ 4,00</span>
-      </div>
-
-      <div class="bevanda">
-        <div>
-          <h3>Vino della casa - 1/4 litro</h3>
-          <p>Bianco o rosso</p>
-        </div>
-        <span class="prezzo">€ 4,50</span>
-      </div>
-
-      <div class="bevanda">
-        <div>
-          <h3>Vino della casa - 1/2 litro</h3>
-          <p>Bianco o rosso</p>
-        </div>
-        <span class="prezzo">€ 7,00</span>
-      </div>
-    </section>
-
-    <section class="categoria">
-      <h2>☕ Caffetteria</h2>
-
-      <div class="bevanda">
-        <div>
-          <h3>Caffè espresso</h3>
-          <p>Il classico italiano</p>
-        </div>
-        <span class="prezzo">€ 1,50</span>
-      </div>
-
-      <div class="bevanda">
-        <div>
-          <h3>Cappuccino</h3>
-          <p>Caffè e latte montato</p>
-        </div>
-        <span class="prezzo">€ 2,00</span>
-      </div>
-
-      <div class="bevanda">
-        <div>
-          <h3>Decaffeinato</h3>
-          <p>Caffè senza caffeina</p>
-        </div>
-        <span class="prezzo">€ 1,70</span>
-      </div>
-    </section>
-
-    <div class="nota">
-      <strong>❤️ Grazie per averci scelto!</strong><br>
-      Le bevande sono servite fresche.<br>
-      Chiedi al personale per altri prodotti disponibili.
+      <span class="prezzo">€ 1,50</span>
     </div>
 
-  </main>
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1559839914-17aae19cec71?w=200&h=200&fit=crop"
+           alt="Acqua frizzante">
+      <div class="dettagli">
+        <h3>Acqua frizzante 50 cl</h3>
+        <p>Bottiglia piccola</p>
+      </div>
+      <span class="prezzo">€ 1,50</span>
+    </div>
 
-  <footer>
-    <h3>🍕 PIZZERIA O'CARMINE</h3>
-    <p>Buon appetito e buona bevuta!</p>
-    <small>Prezzi di esempio, modificabili secondo il tuo locale.</small>
-  </footer>
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1560023907-5f339617ea30?w=200&h=200&fit=crop"
+           alt="Bottiglia di acqua da un litro">
+      <div class="dettagli">
+        <h3>Acqua 1 litro</h3>
+        <p>Naturale o frizzante</p>
+      </div>
+      <span class="prezzo">€ 2,50</span>
+    </div>
+  </section>
+
+  <!-- BIBITE -->
+  <section class="categoria">
+    <h2>🥤 Bibite</h2>
+
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?w=200&h=200&fit=crop"
+           alt="Bibita Coca-Cola">
+      <div class="dettagli">
+        <h3>Coca-Cola 33 cl</h3>
+        <p>Lattina fresca</p>
+      </div>
+      <span class="prezzo">€ 2,50</span>
+    </div>
+
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=200&h=200&fit=crop"
+           alt="Bibita all'arancia">
+      <div class="dettagli">
+        <h3>Fanta 33 cl</h3>
+        <p>Gusto arancia</p>
+      </div>
+      <span class="prezzo">€ 2,50</span>
+    </div>
+
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1625772299848-391b6a1d8b6a?w=200&h=200&fit=crop"
+           alt="Bibita al limone">
+      <div class="dettagli">
+        <h3>Sprite 33 cl</h3>
+        <p>Gusto limone</p>
+      </div>
+      <span class="prezzo">€ 2,50</span>
+    </div>
+
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=200&h=200&fit=crop"
+           alt="Bicchiere di tè freddo">
+      <div class="dettagli">
+        <h3>Tè freddo 33 cl</h3>
+        <p>Limone o pesca</p>
+      </div>
+      <span class="prezzo">€ 2,50</span>
+    </div>
+
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=200&h=200&fit=crop"
+           alt="Bevanda fresca all'arancia">
+      <div class="dettagli">
+        <h3>Aranciata 1 litro</h3>
+        <p>Da condividere</p>
+      </div>
+      <span class="prezzo">€ 4,00</span>
+    </div>
+  </section>
+
+  <!-- BIRRE -->
+  <section class="categoria">
+    <h2>🍺 Birre</h2>
+
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=200&h=200&fit=crop"
+           alt="Birra chiara">
+      <div class="dettagli">
+        <h3>Birra chiara 33 cl</h3>
+        <p>Classica</p>
+      </div>
+      <span class="prezzo">€ 3,50</span>
+    </div>
+
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=200&h=200&fit=crop"
+           alt="Birra in bottiglia grande">
+      <div class="dettagli">
+        <h3>Birra chiara 66 cl</h3>
+        <p>Bottiglia grande</p>
+      </div>
+      <span class="prezzo">€ 5,00</span>
+    </div>
+
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=200&h=200&fit=crop"
+           alt="Birra analcolica">
+      <div class="dettagli">
+        <h3>Birra analcolica 33 cl</h3>
+        <p>Senza alcol</p>
+      </div>
+      <span class="prezzo">€ 3,00</span>
+    </div>
+  </section>
+
+  <!-- VINI -->
+  <section class="categoria">
+    <h2>🍷 Vini</h2>
+
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=200&h=200&fit=crop"
+           alt="Calice di vino">
+      <div class="dettagli">
+        <h3>Vino della casa - calice</h3>
+        <p>Bianco o rosso</p>
+      </div>
+      <span class="prezzo">€ 4,00</span>
+    </div>
+
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=200&h=200&fit=crop"
+           alt="Vino della casa">
+      <div class="dettagli">
+        <h3>Vino della casa - 1/4 litro</h3>
+        <p>Bianco o rosso</p>
+      </div>
+      <span class="prezzo">€ 4,50</span>
+    </div>
+
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=200&h=200&fit=crop"
+           alt="Bottiglia di vino">
+      <div class="dettagli">
+        <h3>Vino della casa - 1/2 litro</h3>
+        <p>Bianco o rosso</p>
+      </div>
+      <span class="prezzo">€ 7,00</span>
+    </div>
+  </section>
+
+  <!-- CAFFETTERIA -->
+  <section class="categoria">
+    <h2>☕ Caffetteria</h2>
+
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=200&h=200&fit=crop"
+           alt="Caffè espresso">
+      <div class="dettagli">
+        <h3>Caffè espresso</h3>
+        <p>Il classico italiano</p>
+      </div>
+      <span class="prezzo">€ 1,50</span>
+    </div>
+
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=200&h=200&fit=crop"
+           alt="Cappuccino">
+      <div class="dettagli">
+        <h3>Cappuccino</h3>
+        <p>Caffè e latte montato</p>
+      </div>
+      <span class="prezzo">€ 2,00</span>
+    </div>
+
+    <div class="bevanda">
+      <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=200&h=200&fit=crop"
+           alt="Caffè decaffeinato">
+      <div class="dettagli">
+        <h3>Decaffeinato</h3>
+        <p>Caffè senza caffeina</p>
+      </div>
+      <span class="prezzo">€ 1,70</span>
+    </div>
+  </section>
+
+  <div class="nota">
+    <strong>❤️ Grazie per averci scelto!</strong><br>
+    Le bevande sono servite fresche.<br>
+    Chiedi al personale per altri prodotti disponibili.
+  </div>
+
+</main>
+
+<footer>
+  <h3>🍕 PIZZERIA O'CARMINE</h3>
+  <p>Buon appetito e buona bevuta!</p>
+  <small>Prezzi di esempio, modificabili secondo il tuo locale.</small>
+</footer>
 
 </body>
 </html>
