@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Pizzeria 'O Carmine - Menu</title>
+  <title>Pizzeria O'Carmine - Menu</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -63,10 +65,27 @@
 
     .pizza {
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      gap: 15px;
+      gap: 12px;
       padding: 14px 4px;
       border-bottom: 1px dashed #d8c6b2;
+    }
+
+    .pizza-info {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .pizza-img {
+      width: 110px;
+      height: 85px;
+      object-fit: cover;
+      border-radius: 10px;
+      flex-shrink: 0;
     }
 
     .pizza h3 {
@@ -104,17 +123,47 @@
       margin-top: 30px;
     }
 
+    footer p {
+      margin: 8px;
+    }
+
     @media (max-width: 480px) {
       header h1 {
-        font-size: 30px;
+        font-size: 27px;
       }
 
       main {
         padding: 15px;
       }
+
+      .pizza-img {
+        width: 78px;
+        height: 72px;
+      }
+
+      .pizza-info {
+        gap: 9px;
+      }
+
+      .pizza {
+        gap: 7px;
+      }
+
+      .pizza h3 {
+        font-size: 15px;
+      }
+
+      .pizza p {
+        font-size: 12px;
+      }
+
+      .prezzo {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -128,37 +177,58 @@
   </section>
 
   <main>
+
     <section class="categoria">
       <h2>🍅 Pizze Classiche</h2>
 
       <div class="pizza">
-        <div>
-          <h3>Margherita</h3>
-          <p>Pomodoro, mozzarella, basilico</p>
+        <div class="pizza-info">
+          <img class="pizza-img"
+            src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=400"
+            alt="Pizza Margherita">
+          <div>
+            <h3>Margherita</h3>
+            <p>Pomodoro, mozzarella, basilico</p>
+          </div>
         </div>
         <span class="prezzo">€ 6,00</span>
       </div>
 
       <div class="pizza">
-        <div>
-          <h3>Marinara</h3>
-          <p>Pomodoro, aglio, origano, olio EVO</p>
+        <div class="pizza-info">
+          <img class="pizza-img"
+            src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400"
+            alt="Pizza Marinara">
+          <div>
+            <h3>Marinara</h3>
+            <p>Pomodoro, aglio, origano, olio EVO</p>
+          </div>
         </div>
         <span class="prezzo">€ 5,00</span>
       </div>
 
       <div class="pizza">
-        <div>
-          <h3>Napoli</h3>
-          <p>Pomodoro, mozzarella, acciughe, origano</p>
+        <div class="pizza-info">
+          <img class="pizza-img"
+            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400"
+            alt="Pizza Napoli">
+          <div>
+            <h3>Napoli</h3>
+            <p>Pomodoro, mozzarella, acciughe, origano</p>
+          </div>
         </div>
         <span class="prezzo">€ 7,50</span>
       </div>
 
       <div class="pizza">
-        <div>
-          <h3>Diavola</h3>
-          <p>Pomodoro, mozzarella, salame piccante</p>
+        <div class="pizza-info">
+          <img class="pizza-img"
+            src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400"
+            alt="Pizza Diavola">
+          <div>
+            <h3>Diavola</h3>
+            <p>Pomodoro, mozzarella, salame piccante</p>
+          </div>
         </div>
         <span class="prezzo">€ 8,00</span>
       </div>
@@ -168,33 +238,53 @@
       <h2>🧀 Pizze Speciali</h2>
 
       <div class="pizza">
-        <div>
-          <h3>Quattro Formaggi</h3>
-          <p>Mozzarella, gorgonzola, fontina, parmigiano</p>
+        <div class="pizza-info">
+          <img class="pizza-img"
+            src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400"
+            alt="Pizza Quattro Formaggi">
+          <div>
+            <h3>Quattro Formaggi</h3>
+            <p>Mozzarella, gorgonzola, fontina, parmigiano</p>
+          </div>
         </div>
         <span class="prezzo">€ 9,00</span>
       </div>
 
       <div class="pizza">
-        <div>
-          <h3>Capricciosa</h3>
-          <p>Pomodoro, mozzarella, prosciutto, funghi, carciofi, olive</p>
+        <div class="pizza-info">
+          <img class="pizza-img"
+            src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=400"
+            alt="Pizza Capricciosa">
+          <div>
+            <h3>Capricciosa</h3>
+            <p>Pomodoro, mozzarella, prosciutto, funghi, carciofi, olive</p>
+          </div>
         </div>
         <span class="prezzo">€ 9,00</span>
       </div>
 
       <div class="pizza">
-        <div>
-          <h3>Vegetariana</h3>
-          <p>Pomodoro, mozzarella, verdure di stagione</p>
+        <div class="pizza-info">
+          <img class="pizza-img"
+            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400"
+            alt="Pizza Vegetariana">
+          <div>
+            <h3>Vegetariana</h3>
+            <p>Pomodoro, mozzarella, verdure di stagione</p>
+          </div>
         </div>
         <span class="prezzo">€ 8,50</span>
       </div>
 
       <div class="pizza">
-        <div>
-          <h3>Bufalina</h3>
-          <p>Pomodoro, mozzarella di bufala, basilico</p>
+        <div class="pizza-info">
+          <img class="pizza-img"
+            src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400"
+            alt="Pizza Bufalina">
+          <div>
+            <h3>Bufalina</h3>
+            <p>Pomodoro, mozzarella di bufala, basilico</p>
+          </div>
         </div>
         <span class="prezzo">€ 9,50</span>
       </div>
@@ -204,17 +294,27 @@
       <h2>🍟 Fritti</h2>
 
       <div class="pizza">
-        <div>
-          <h3>Patatine fritte</h3>
-          <p>Porzione classica</p>
+        <div class="pizza-info">
+          <img class="pizza-img"
+            src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400"
+            alt="Patatine fritte">
+          <div>
+            <h3>Patatine fritte</h3>
+            <p>Porzione classica</p>
+          </div>
         </div>
         <span class="prezzo">€ 3,50</span>
       </div>
 
       <div class="pizza">
-        <div>
-          <h3>Supplì</h3>
-          <p>Riso, pomodoro e mozzarella</p>
+        <div class="pizza-info">
+          <img class="pizza-img"
+            src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=400"
+            alt="Supplì e fritti">
+          <div>
+            <h3>Supplì</h3>
+            <p>Riso, pomodoro e mozzarella</p>
+          </div>
         </div>
         <span class="prezzo">€ 2,00</span>
       </div>
@@ -224,17 +324,38 @@
       <h2>🥤 Bevande</h2>
 
       <div class="pizza">
-        <div><h3>Acqua 50 cl</h3></div>
+        <div class="pizza-info">
+          <img class="pizza-img"
+            src="https://images.unsplash.com/photo-1564419320461-6870880221ad?w=400"
+            alt="Acqua in bottiglia">
+          <div>
+            <h3>Acqua 50 cl</h3>
+          </div>
+        </div>
         <span class="prezzo">€ 1,50</span>
       </div>
 
       <div class="pizza">
-        <div><h3>Cola 33 cl</h3></div>
+        <div class="pizza-info">
+          <img class="pizza-img"
+            src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=400"
+            alt="Bibita alla cola">
+          <div>
+            <h3>Cola 33 cl</h3>
+          </div>
+        </div>
         <span class="prezzo">€ 2,50</span>
       </div>
 
       <div class="pizza">
-        <div><h3>Birra 33 cl</h3></div>
+        <div class="pizza-info">
+          <img class="pizza-img"
+            src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=400"
+            alt="Birra">
+          <div>
+            <h3>Birra 33 cl</h3>
+          </div>
+        </div>
         <span class="prezzo">€ 3,50</span>
       </div>
     </section>
@@ -244,6 +365,7 @@
       Tutte le pizze sono preparate al momento.<br>
       Chiedi al personale informazioni sugli allergeni.
     </div>
+
   </main>
 
   <footer>
